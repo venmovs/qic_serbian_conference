@@ -1,0 +1,42 @@
+.game-container {
+  position: relative;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.game-canvas {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 30px;
+  border: 2px solid #5927ff;
+  @media (max-width: 550px) {
+    border-radius: 10px;
+  }
+}
+
+.crash-overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  width: 100dvw;
+  height: 100dvh;
+  text-align: center;
+}
+
+.crash-message {
+  display: block;
+  font-size: 30px;
+  color: #5927ff;
+  margin-bottom: 20px;
+}
+
+.resume-button {
+  color: white;
+  @media (max-width: 550px) {
+    max-width: 300px;
+  }
+}
